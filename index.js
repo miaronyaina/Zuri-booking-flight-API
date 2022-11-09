@@ -8,7 +8,7 @@ const app = express();
 
 app.use(json());
 
-app.use("/flight", flights);
+app.use("/flight", routes);
 
 app.get("/", (req,res)=>{
    res.send(`Flight server of ZURI Training`); 
